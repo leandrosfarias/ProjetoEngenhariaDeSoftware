@@ -2,7 +2,7 @@
 use Application\models\Protocolo;
 require_once '../models/Protocolo.php';
 /** COLETA AS INFORMAÇÕES DIGITADAS NO FORMULÁRIO addProtocolo.html **/
-$especie_animal = $_POST['animal'];
+$especie_animal = $_POST['animal'] ?? null;
 $justificava = $_POST['justificava'] ?? null;
 $resumo_pt = $_POST['resumo_pt'] ?? null;
 $resumo_en = $_POST['resumo_en'] ?? null;
